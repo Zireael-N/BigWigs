@@ -34,6 +34,8 @@ L.blockGuildChallengeDesc = [=[公會挑戰彈出訊息顯示幾種資訊，其�
 這些彈出訊息有可能在首領戰鬥中遮蓋你的介面中重要的部份，因此我們建議封鎖這些彈出訊息。]=]
 L.blockMovies = "封鎖重覆的動畫"
 L.blockMoviesDesc = "首領戰鬥中的動畫只會播放一次（你每部都能看一次）然後就會被封鎖。"
+-- L.blockTalkingHead = "Block \"Talking Head\" popups"
+-- L.blockTalkingHeadDesc = "\"Talking Head\" popups appear during NPCs' dialogues.\n\nThese popups can cover up critical parts of your UI during combat, so we recommend blocking them."
 L.blockSpellErrors = "封鎖施法失敗訊息"
 L.blockSpellErrorsDesc = "如「法術還沒準備好」等顯示於畫面上方的訊息會被封鎖。"
 L.bossBlock = "首領戰訊息封鎖"

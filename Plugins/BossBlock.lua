@@ -12,6 +12,7 @@ if not plugin then return end
 plugin.defaultDB = {
 	blockEmotes = true,
 	blockMovies = true,
+	blockTalkingHead = true,
 	blockGarrison = true,
 	blockGuildChallenge = true,
 	blockSpellErrors = true,
@@ -71,33 +72,40 @@ plugin.pluginOptions = {
 			width = "full",
 			order = 2,
 		},
+		blockTalkingHead = {
+			type = "toggle",
+			name = L.blockTalkingHead,
+			desc = L.blockTalkingHeadDesc,
+			width = "full",
+			order = 3,
+		},
 		blockGarrison = {
 			type = "toggle",
 			name = L.blockFollowerMission,
 			desc = L.blockFollowerMissionDesc,
 			width = "full",
-			order = 3,
+			order = 4,
 		},
 		blockGuildChallenge = {
 			type = "toggle",
 			name = L.blockGuildChallenge,
 			desc = L.blockGuildChallengeDesc,
 			width = "full",
-			order = 4,
+			order = 5,
 		},
 		blockSpellErrors = {
 			type = "toggle",
 			name = L.blockSpellErrors,
 			desc = L.blockSpellErrorsDesc,
 			width = "full",
-			order = 5,
+			order = 6,
 		},
 		blockTooltipQuests = {
 			type = "toggle",
 			name = L.blockTooltipQuests,
 			desc = L.blockTooltipQuestsDesc,
 			width = "full",
-			order = 6,
+			order = 7,
 			disabled = function() return true end, -- XXX Do we want to hack the tooltip?
 		},
 		blockObjectiveTracker = {
@@ -105,33 +113,33 @@ plugin.pluginOptions = {
 			name = L.blockObjectiveTracker,
 			desc = L.blockObjectiveTrackerDesc,
 			width = "full",
-			order = 7,
+			order = 8,
 		},
 		audioHeader = {
 			type = "header",
 			name = L.audio,
-			order = 8,
+			order = 9,
 		},
 		disableMusic = {
 			type = "toggle",
 			name = L.disableMusic,
 			desc = L.disableAudioDesc:format(L.music),
 			width = "full",
-			order = 9,
+			order = 10,
 		},
 		disableAmbience = {
 			type = "toggle",
 			name = L.disableAmbience,
 			desc = L.disableAudioDesc:format(L.ambience),
 			width = "full",
-			order = 10,
+			order = 11,
 		},
 		disableSfx = {
 			type = "toggle",
 			name = L.disableSfx,
 			desc = L.disableAudioDesc:format(L.sfx),
 			width = "full",
-			order = 11,
+			order = 12,
 		},
 	},
 }
@@ -164,6 +172,8 @@ function plugin:OnPluginEnable()
 	self:RegisterEvent("PLAY_MOVIE")
 	self:SiegeOfOrgrimmarCinematics() -- Sexy hack until cinematics have an id system (never)
 	self:ToyCheck() -- Sexy hack until cinematics have an id system (never)
+
+	self:RegisterEvent("TALKINGHEAD_REQUESTED")
 
 	CheckElv(self)
 end
@@ -440,5 +450,10 @@ do
 			end
 		end
 	end
-end
 
+	function plugin:TALKINGHEAD_REQUESTED()
+		if self.db.profile.blockTalkingHead and IsInInstance() then
+			TalkingHeadFrame:Hide()
+		end
+	end
+end

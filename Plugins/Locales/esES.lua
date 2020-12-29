@@ -34,6 +34,8 @@ L.blockGuildChallengeDesc = [=[Los logros de hermandad muestran ventanas emergen
 Estas ventanas pueden cubrir partes críticas de tu interfaz durante un encuentro, así que recomendamos bloquearlas.]=]
 L.blockMovies = "Bloquear vídeos repetidos"
 L.blockMoviesDesc = "Los vídeos de un encuentro solo se visionarán una vez (los verás todos una vez) y luego serán bloqueados."
+-- L.blockTalkingHead = "Block \"Talking Head\" popups"
+-- L.blockTalkingHeadDesc = "\"Talking Head\" popups appear during NPCs' dialogues.\n\nThese popups can cover up critical parts of your UI during combat, so we recommend blocking them."
 L.blockSpellErrors = "Bloquear mensajes de hechizos fallidos"
 L.blockSpellErrorsDesc = "Mensajes como \"Ese hechizo no está listo todavía\" que normalmente se muestran arriba de la pantalla serán bloqueados."
 L.bossBlock = "Bloque de Jefe"

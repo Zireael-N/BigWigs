@@ -34,6 +34,8 @@ L.blockGuildChallengeDesc = [=[Гильдейские испытания в ос
 Эти уведомления могут скрыть важные части вашего интерфейса в течении боя с боссом, поэтому мы рекомендуем скрыть их.]=]
 L.blockMovies = "Скрыть повторяющиеся ролики"
 L.blockMoviesDesc = "Ролики боссов будут проиграны лишь один раз (то есть вы сможете посмотреть каждый) и последующие воспроизведения будут заблокированы."
+-- L.blockTalkingHead = "Block \"Talking Head\" popups"
+-- L.blockTalkingHeadDesc = "\"Talking Head\" popups appear during NPCs' dialogues.\n\nThese popups can cover up critical parts of your UI during combat, so we recommend blocking them."
 L.blockSpellErrors = "Скрыть сообщения о неудавшихся заклинаниях"
 L.blockSpellErrorsDesc = "Сообщения, такие как \"Заклинание не готово\", которые отображаются наверху экрана, будут скрыты."
 L.bossBlock = "Фильтр событий"

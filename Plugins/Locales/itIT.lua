@@ -34,6 +34,8 @@ L.blockGuildChallengeDesc = [=[I popup delle Sfide di Gilda vengono mostrati per
 Questi popup possono coprire parti critiche o importanti della tua UI durante il combattimento contro un boss, raccomandiamo quindi di bloccarli.]=]
 L.blockMovies = "Blocca filmati già visti"
 L.blockMoviesDesc = "I filmati dei boss (ove presenti) verranno fatti vedere solo la prima volta che si attivano per visualizzarli; dalle volte successive questi video verranno cancellati automaticamente."
+-- L.blockTalkingHead = "Block \"Talking Head\" popups"
+-- L.blockTalkingHeadDesc = "\"Talking Head\" popups appear during NPCs' dialogues.\n\nThese popups can cover up critical parts of your UI during combat, so we recommend blocking them."
 L.blockSpellErrors = "Blocca i messaggi di errore degli incantesimi"
 L.blockSpellErrorsDesc = "Messaggi tipo \"Questo incantesimo non è ancora pronto\" che in genere vengono mostrati in alto nello schermo verranno bloccati."
 L.bossBlock = "Blocco Boss"

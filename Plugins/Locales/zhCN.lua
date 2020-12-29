@@ -34,6 +34,8 @@ L.blockGuildChallengeDesc = [=[公会挑战弹出窗口会显示一些事情，�
 这些弹出窗口会在首领战斗时覆盖在你重要的用户界面之上，所以建议屏蔽它们。]=]
 L.blockMovies = "屏蔽重播电影"
 L.blockMoviesDesc = "首领战斗电影将只允许播放一次（所以可以观看每一个），下次重播将被屏蔽掉。"
+-- L.blockTalkingHead = "Block \"Talking Head\" popups"
+-- L.blockTalkingHeadDesc = "\"Talking Head\" popups appear during NPCs' dialogues.\n\nThese popups can cover up critical parts of your UI during combat, so we recommend blocking them."
 L.blockSpellErrors = "屏蔽法术失败信息"
 L.blockSpellErrorsDesc = "通常在屏幕顶部显示的信息类似于“法术还没有准备好”将被屏蔽掉。"
 L.bossBlock = "首领屏蔽"
